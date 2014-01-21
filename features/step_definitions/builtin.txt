@@ -1,0 +1,94 @@
+(my|the) app is running
+
+# -- Touch --#
+I (?:press|touch) on screen (\d+) from the left and (\d+) from the top
+I (?:press|touch) "([^\"]*)"
+I (?:press|touch) (\d+)% right and (\d+)% down from "([^\"]*)" 
+I (?:press|touch) button number (\d+)
+I (?:press|touch) the "([^\"]*)" button
+I (?:press|touch) tabBarButton number (\d+)
+I (?:press|touch) the "([^\"]*)" tabBarButton
+I (?:press|touch) (?:input|text) field number (\d+)
+I (?:press|touch) the "([^\"]*)" (?:input|text) field
+
+#Note in tables views: this means visible cell index!
+I (?:press|touch) list item number (\d+)
+I (?:press|touch) list item "([^\"]*)"
+I toggle the switch
+I toggle the "([^\"]*)" switch
+I touch (?:the)? user location
+I (?:touch|press) (?:done|search)
+
+## -- Entering text -- ##
+I enter "([^\"]*)" into the "([^\"]*)" field
+I enter "([^\"]*)" into the "([^\"]*)" (?:text|input) field
+# alias
+I fill in "([^\"]*)" with "([^\"]*)"
+I use the native keyboard to enter "([^\"]*)" into the "([^\"]*)" (?:text|input) field
+I fill in text fields as follows:
+I enter "([^\"]*)" into (?:input|text) field number (\d+)
+I use the native keyboard to enter "([^\"]*)" into (?:input|text) field number (\d+)
+I clear "([^\"]*)"
+I clear (?:input|text) field number (\d+)
+
+# -- See -- #
+I wait to see "([^\"]*)"
+I wait until I don't see "([^\"]*)"
+I wait to not see "([^\"]*)"
+I wait for "([^\"]*)" to appear
+I wait for the "([^\"]*)" button to appear
+I wait for the "([^\"]*)" tabBarButton to appear
+I wait to see a navigation bar titled "([^\"]*)"
+I wait for the "([^\"]*)" (?:input|text) field
+I wait for (\d+) (?:input|text) field(?:s)?
+I wait
+I wait and wait
+I wait and wait and wait...
+When /^I wait for ([\d\.]+) second(?:s)?
+I go back
+(?:I\s)?take (?:picture|screenshot)
+I swipe (left|right|up|down)
+I swipe (left|right|up|down) on number (\d+)
+I swipe (left|right|up|down) on number (\d+) at x (\d+) and y (\d+)
+I swipe (left|right|up|down) on "([^\"]*)"
+I swipe on cell number (\d+)
+
+##pinch##
+I pinch to zoom (in|out)
+I pinch to zoom (in|out) on "([^\"]*)"
+
+#   Note "up/left/right" seems to be missing on the web base
+I scroll (left|right|up|down)
+I scroll (left|right|up|down) on "([^\"]*)"
+
+### Playback ###
+I playback recording "([^\"]*)"
+I playback recording "([^\"]*)" on "([^\"]*)"
+I playback recording "([^\"]*)" on "([^\"]*)" with offset (\d+),(\d+)
+I reverse playback recording "([^\"]*)"
+I reverse playback recording "([^\"]*)" on "([^\"]*)"
+I reverse playback recording "([^\"]*)" on "([^\"]*)" with offset (\d+),(\d+)
+
+### Device orientation ###
+I rotate device (left|right)
+I send app to background for (\d+) seconds
+
+### Assertions ###
+I should see "([^\"]*)"
+I should not see "([^\"]*)"
+I should see a "([^\"]*)" button
+I should not see a "([^\"]*)" button
+I should see a "([^\"]*)" tabBarButton
+I should not see a "([^\"]*)" tabBarButton
+I don't see the text "([^\"]*)"
+I don't see the "([^\"]*)"
+I see the text "([^\"]*)"
+I see the "([^\"]*)"
+I (?:should)? see text starting with "([^\"]*)"
+I (?:should)? see text containing "([^\"]*)"
+I (?:should)? see text ending with "([^\"]*)"
+I see (\d+) (?:input|text) field(?:s)?
+I should see a "([^\"]*)" (?:input|text) field
+I should not see a "([^\"]*)" (?:input|text) field
+I should see a map
+I should see (?:the)? user location

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="0001 initial" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+  <entity name="Event" syncable="YES" representedClassName="Event">
+    <attribute optional="NO" syncable="YES" attributeType="Date" name="timestamp"/>
+    <attribute optional="NO" syncable="YES" attributeType="String" name="action_code"/>
+    <attribute optional="YES" syncable="YES" attributeType="String" name="message"/>
+    <relationship optional="YES" deletionRule="Nullify" syncable="YES" name="subjects" inverseEntity="Person" destinationEntity="Person" inverseName="events" toMany="YES"/>
+  </entity>
+  <entity name="Person" syncable="YES" representedClassName="Person">
+    <attribute optional="NO" syncable="YES" attributeType="String" name="name"/>
+    <relationship optional="YES" deletionRule="Nullify" syncable="YES" name="events" inverseEntity="Event" destinationEntity="Event" inverseName="subjects" toMany="YES"/>
+  </entity>
+  <entity name="Hourly" syncable="YES" representedClassName="Hourly">
+    <attribute optional="YES" syncable="YES" attributeType="Date" name="timestamp"/>
+    <attribute optional="YES" syncable="YES" attributeType="Integer 32" name="enter_the_room" defaultValueString="0"/>
+    <attribute optional="YES" syncable="YES" attributeType="Integer 32" name="leave_the_room" defaultValueString="0"/>
+    <attribute optional="YES" syncable="YES" attributeType="Integer 32" name="high_five_another_user" defaultValueString="0"/>
+    <attribute optional="YES" syncable="YES" attributeType="Integer 32" name="comment" defaultValueString="0"/>
+  </entity>
+  <entity name="Daily" syncable="YES" representedClassName="Daily">
+    <attribute optional="YES" syncable="YES" attributeType="Date" name="timestamp"/>
+    <attribute optional="YES" syncable="YES" attributeType="Integer 32" name="enter_the_room" defaultValueString="0"/>
+    <attribute optional="YES" syncable="YES" attributeType="Integer 32" name="leave_the_room" defaultValueString="0"/>
+    <attribute optional="YES" syncable="YES" attributeType="Integer 32" name="high_five_another_user" defaultValueString="0"/>
+    <attribute optional="YES" syncable="YES" attributeType="Integer 32" name="comment" defaultValueString="0"/>
+  </entity>
+</model>

@@ -1,0 +1,10 @@
+"time.ago.days" = "%{duration} days ago";
+"time.ago.hours" = "%{duration} hours ago";
+"time.ago.just_now" = "just now";
+"time.ago.minutes" = "%{duration} minutes ago";
+"time.ago.seconds" = "less than a minute ago";
+"time.future.days" = "in %{duration} days";
+"time.future.hours" = "in %{duration} hours";
+"time.future.minutes" = "in %{duration} minutes";
+"time.future.seconds" = "in less than a minute";
+"time.future.soon" = "very soon";

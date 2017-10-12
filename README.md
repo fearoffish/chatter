@@ -1,4 +1,4 @@
-##The Challenge:
+## The Challenge:
 
 You are implementing a chat room interface in which the user can
 view chat history at varying levels of time-based aggregation.
